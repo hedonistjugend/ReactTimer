@@ -11,24 +11,20 @@ var Navigation = React.createClass({
                                  React Timer
                              </li>
                              <li>
-                                 <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
+                                 <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
                              </li>
+
                              <li>
-                                 <Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link>
-                             </li>
-                             <li>
-                                 <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link>
+                                 <Link to="/countdown" activeClassName="active-link">Countdown</Link>
                              </li>
                          </ul>
                      </div>
                      <div className="top-bar-right">
-                         <form onSubmit={this.onSearch}>
-                             <ul className="menu">
-                                <li className="menu-text">
-                                    Made by <a href="#">Konst Dmitriev</a>
-                                </li>
-                             </ul>
-                         </form>
+                        <ul className="menu">
+                            <li className="menu-text">
+                                Made by <a href="#">Konst Dmitriev</a>
+                            </li>
+                         </ul>
                      </div>
             </div>
         );
